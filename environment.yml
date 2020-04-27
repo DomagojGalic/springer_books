@@ -1,0 +1,6 @@
+name: springer
+
+dependencies:
+  - pandas
+  - bs4
+  - tqdm
