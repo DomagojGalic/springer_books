@@ -79,3 +79,7 @@ def main(xlsxPath = "Free+English+textbooks.xlsx",
             failed.append(i)
     
     print("Success: {}\nFail: {}".format(length - len(failed), len(failed)))
+
+if __name__ == "__main__":
+    main()
+

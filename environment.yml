@@ -2,5 +2,6 @@ name: springer
 
 dependencies:
   - pandas
+  - requests
   - bs4
   - tqdm
