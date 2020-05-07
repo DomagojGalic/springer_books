@@ -6,3 +6,4 @@ dependencies:
   - bs4
   - tqdm
   - xlrd
+  - lxml

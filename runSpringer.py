@@ -78,8 +78,9 @@ def main(xlsxPath = "Free+English+textbooks.xlsx",
         except:
             failed.append(i)
 
-    failedFrame = df.loc[pd.Index(failed)]
-    failedFrame.to_csv("./failed.csv", index = False)    
+    if failed:
+        failedFrame = df.loc[pd.Index(failed)]
+        failedFrame.to_csv("./failed.csv", index = False)    
     print("Success: {}\nFail: {}".format(length - len(failed), len(failed)))
 
 if __name__ == "__main__":
